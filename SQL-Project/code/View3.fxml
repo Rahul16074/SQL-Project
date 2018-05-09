@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="550.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="assign_4.view3controller">
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Button layoutX="55.0" layoutY="100.0" mnemonicParsing="false" onAction="#Q11" prefHeight="31.0" prefWidth="80.0" text="Query11" />
+        <Button layoutX="55.0" layoutY="325.0" mnemonicParsing="false" onAction="#Q14" prefHeight="31.0" prefWidth="80.0" text="Query14" />
+        <Button layoutX="55.0" layoutY="250.0" mnemonicParsing="false" onAction="#Q13" prefHeight="31.0" prefWidth="80.0" text="Query13" />
+        <Button layoutX="55.0" layoutY="175.0" mnemonicParsing="false" onAction="#Q12" prefHeight="31.0" prefWidth="79.0" text="Query12" />
+        <Label layoutX="155.0" layoutY="84.0" prefHeight="63.0" prefWidth="356.0" text="List the medicines prescribed by doctor &#10;with id:1001 to patient 139" />
+        <Label layoutX="155.0" layoutY="180.0" prefHeight="21.0" prefWidth="356.0" text="Delete entry of patient:119 who visited doctor:1010 from Visits" />
+        <Label layoutX="155.0" layoutY="255.0" prefHeight="21.0" prefWidth="356.0" text="Insert the following into Visits: 108, 1003, 2018/01/14" />
+        <Label layoutX="155.0" layoutY="330.0" prefHeight="21.0" prefWidth="356.0" text="Update the date of 108's visit to doctor 1003 to 2018/02/14" />
+        <Button layoutX="200.0" layoutY="480.0" mnemonicParsing="false" onAction="#goview2" text="Prev" />
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

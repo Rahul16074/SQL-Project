@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="550.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="assign_4.view1controller">
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Button layoutX="55.0" layoutY="400.0" mnemonicParsing="false" onAction="#Q10" text="Query10" />
+        <Button layoutX="55.0" layoutY="100.0" mnemonicParsing="false" onAction="#Q6" prefHeight="31.0" prefWidth="72.0" text="Query6" />
+        <Button layoutX="55.0" layoutY="325.0" mnemonicParsing="false" onAction="#Q9" prefHeight="31.0" prefWidth="74.0" text="Query9" />
+        <Button layoutX="55.0" layoutY="250.0" mnemonicParsing="false" onAction="#Q8" prefHeight="31.0" prefWidth="74.0" text="Query8" />
+        <Button layoutX="55.0" layoutY="175.0" mnemonicParsing="false" onAction="#Q7" prefHeight="31.0" prefWidth="72.0" text="Query7" />
+        <Label layoutX="155.0" layoutY="84.0" prefHeight="63.0" prefWidth="356.0" text="Print all the patients with Pregnancy as medical history &#10;who take Medicine :1007 manufactured by manufacturer:102" />
+        <Label layoutX="155.0" layoutY="166.0" prefHeight="49.0" prefWidth="356.0" text="Print all the medicines prescribed by Doctor_id:1001 &#10;to Patient_id:139 manufactured by Manufacturer with id:102" />
+        <Label layoutX="155.0" layoutY="248.0" prefHeight="38.0" prefWidth="356.0" text="Print all patients who consume medicine with id:1002, &#10;with history of Blood Pressure prescribed by doctor with id: 1008" />
+        <Label layoutX="155.0" layoutY="323.0" prefHeight="38.0" prefWidth="356.0" text="Find all the patients with medical history as Thyroid &#10;who visited the hospital on 19/04/2018" />
+        <Label layoutX="156.0" layoutY="396.0" prefHeight="38.0" prefWidth="356.0" text="Find patients who consume medicines manufactured by &#10;manufacturer with id:101" />
+        <Button layoutX="270.0" layoutY="480.0" mnemonicParsing="false" onAction="#goview3" text="Next" />
+        <Button layoutX="200.0" layoutY="480.0" mnemonicParsing="false" onAction="#goview1" text="Prev" />
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

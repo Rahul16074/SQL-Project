@@ -1,0 +1,27 @@
+select * from Patient where History = 'Depression';
+
+select History, Contact_no from Patient where P_id = 108;
+
+delete from Visits where P_id = 119 and D_id = 1010;
+ 
+select * from Visits where date = '2018.04.15';
+
+insert into Visits values (108, 1003, '2018.01.14');
+
+select * from Medicine order by Price;
+
+update Visits SET date='2018.02.14' where P_id =108 and D_id = 1003;
+
+select M_id from Medicine where Pres_reqd = 'NO';
+
+select P.P_name from Patient P, Consumes C, Manufacturer M where P.P_id = C.P_id and C.M_id = M.Med_id and C.M_id = 1007 and P.History = 'Pregnancy' and M.Man_id = 102; 
+
+select M.Med_id from Prescribes P, Manufacturer M where P.M_id = M.Med_id and M.Man_id = 102 and P.D_id = 1001 and P.P_id = 139;
+
+select P.P_name from Patient P, Medicine M, Consumes C, Prescribes Pr where P.P_id = C.P_id and C.M_id = 1002 and P.History = 'Blood Pressure' and M.M_id = Pr.M_id and Pr.D_id = 1008 and Pr.P_id = C.P_id;
+
+select P.P_name from Patient P, Visits V, Doctor D where V.P_id = P.P_id and V.D_id = D.D_id and V.Date = '2018.04.19' and P.History = 'Thyroid';
+
+select P.P_name from Patient P, Consumes C, Manufacturer M where P.P_id = C.P_id and C.M_id = M.Med_id and M.Man_id = 101;
+
+select M.Med_id, M.Man_id from Prescribes P, Manufacturer M where P.M_id = M.Med_id and P.D_id = 1001 and P.P_id = 139;
